@@ -6,12 +6,13 @@ Time spent: 7 hours spent in total
 
 ### Required: Overview & Setup
 
-- [x] A basic writeup (250-500 words) on the `README.md` desribing the overall approach, resources/tools used, findings
+- [x] A basic writeup (250-500 words) on the `README.md` desribing the overall approach, resources/tools used, findings:
 
 I used a Docker based WordPress honeypot implemented in Python using their Flask framework. I used nmap, wireshark, and Suricata to check for traffic on my network and intrusions on my server. I plan to return to this someday but I didn't test much outside of using these tools. Overall approach was, try an attack, check the IDS software or wireshark and then rinse and repeat.
 
 - [x] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
-	- A Vagrantfile or Dockerfile which provisions the honeypot as a VM or container
+	- A Vagrantfile or Dockerfile which provisions the honeypot as a VM or container:
+
 `
 version: '2'
 services:
@@ -37,6 +38,7 @@ services:
     links:
       - mongo
 `
+
 	- A bash script that installs and configures the honeypot for a specific OS
 	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
 
