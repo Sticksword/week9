@@ -12,6 +12,10 @@ I used a Docker based WordPress honeypot implemented in Python using their Flask
 
 - [x] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
 	- A Vagrantfile or Dockerfile which provisions the honeypot as a VM or container:
+	- A bash script that installs and configures the honeypot for a specific OS
+	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
+	
+Dockerfile:
 
 `
 version: '2'
@@ -38,8 +42,7 @@ services:
     links:
       - mongo`
 
-	- A bash script that installs and configures the honeypot for a specific OS
-	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
+
 
 ### Required: Demonstration
 
