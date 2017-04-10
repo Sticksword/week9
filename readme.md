@@ -36,8 +36,7 @@ services:
     depends_on:
       - mongo
     links:
-      - mongo
-`
+      - mongo`
 
 	- A bash script that installs and configures the honeypot for a specific OS
 	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
